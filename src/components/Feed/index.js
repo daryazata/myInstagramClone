@@ -5,6 +5,7 @@ import Stories from '../Stories';
 
 const posts = [
   {
+    id: '1',
     user: {
       id: '1',
       imageUri:
@@ -19,6 +20,7 @@ const posts = [
     postedAt: '6 minutes ago',
   },
   {
+    id: '2',
     user: {
       id: '2',
       imageUri:
@@ -33,6 +35,7 @@ const posts = [
     postedAt: '16 minutes ago',
   },
   {
+    id: '3',
     user: {
       id: '3',
       imageUri:
@@ -53,7 +56,7 @@ export default function Feed() {
       <FlatList
         data={posts}
         renderItem={({item}) => <Post post={item} />}
-        keyExtractor={({item, index}) => index}
+        keyExtractor={({id}) => id}
         ListHeaderComponent={Stories}
       />
     </>
