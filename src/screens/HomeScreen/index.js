@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
-import {Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 import ProfilePicture from '../../components/ProfilePicture';
 import Feed from '../../components/Feed';
 
 const HomeScreen = () => (
   <>
-    <Feed />
+    <SafeAreaView>
+      <Feed />
+    </SafeAreaView>
   </>
 );
 
