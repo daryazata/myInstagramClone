@@ -60,8 +60,9 @@ function HomeStackScreen() {
           ),
           headerTitle: () => (
             <Image
-              source={require('./assets/images/instagram-logo-black-border-transparent-png.png')}
-              style={{width: 160, height: 50}}
+              source={require('./assets/images/640px-Instagram_logo.svg.png')}
+              style={{width: 160}}
+              resizeMode="contain" //cool, img fits into header
             />
           ),
           headerStyle: {
